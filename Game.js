@@ -34,7 +34,7 @@ class Game extends Phaser.Scene {
         player = this.physics.add.sprite(100, 200, 'sallu').setScale(0.3); // agrega ao sallu um corpo físico dinâmico
 
         player.setBounce(0.2); // defini o fator de ressalto
-        player.setCollideWorldBounds(false) // para ele somente ficar no mapa 
+        player.setCollideWorldBounds(true) // para ele somente ficar no mapa 
         this.physics.add.collider(player, plataforms); // não colidir com as 
 
         player.body.setSize(400, 900, true); // alterar hitbox do sallu
