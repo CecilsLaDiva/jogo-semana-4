@@ -50,7 +50,7 @@ class Game extends Phaser.Scene {
             cifs.body.setSize(20, 20, true);
         });
         //add o placar
-        placar = this.add.text(850, 30, 'moneys:0/3', { fontSize: '30px', fill: '#ffffff' })
+        placar = this.add.text(850, 30, 'moneys:0/3', { fontSize: '30px', fill: '#000000' })
 
         this.physics.add.overlap(player, cifs.getChildren(), function (player, cif) {
             cif.disableBody(true, true); // Desativa a física e esconde o cif
