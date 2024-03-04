@@ -127,7 +127,7 @@ class Game extends Phaser.Scene {
                 player.anims.play('right', true);
             }
 
-            else if (cursors.up.isDown) {
+            else if (cursors.up.isDown && player.body.touching.down) {
                 player.anims.play('up');
                 player.setVelocity(0, -400);
             }
